@@ -16,7 +16,7 @@ if missing_vars:
         f"Missing required environment variables: {', '.join(missing_vars)}"
     )
 
-llm = ChatGoogleGenerativeAI(model="gemini-1.0-pro", api_key=os.getenv("GOOGLE_API_KEY"))
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", api_key=os.getenv("GOOGLE_API_KEY"))
 composio_toolset = ComposioToolSet(api_key=os.getenv("COMPOSIO_API_KEY"))
 
 
